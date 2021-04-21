@@ -1,0 +1,19 @@
+{
+  "name": "scrape-hh-vacc-updates",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StarfishM/scrape-hh-vacc-updates.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StarfishM/scrape-hh-vacc-updates/issues"
+  },
+  "homepage": "https://github.com/StarfishM/scrape-hh-vacc-updates#readme"
+}
