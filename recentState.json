@@ -1,80 +1,65 @@
-[
-    {
-        "dateUpdated": "20.04.2021"
-    },
-    {
-        "0": "(Stand: 20.04.2021) Der Aufruf zu den Schutzimpfungen und die Einladung zur Terminvereinbarung erfolgt zeitlich gestaffelt."
-    },
-    {
-        "1": "Bitte beachten Sie: Alle AstraZeneca-Impftermine für 60-69-Jährige an den Sonder-Impftagen 21. bis 23. April sind bereits vergeben!"
-    },
-    {
-        "2": "Derzeit sind folgende Personen- und Berufsgruppen aufgerufen, einen Termin für die Schutzimpfung im Impfzentrum online oder per Telefon unter 116 117 zu vereinbaren:"
-    },
-    {
-        "3": "Zusätzlich sind die folgenden Personen- und Berufsgruppen impfberechtigt. Sie erhalten einen Impftermin oder eine Schutzimpfung über den jeweiligen Arbeitgeber bzw. Dienstherren, ein mobiles Impfteam in der Einrichtung oder ihre zuständige Arztpraxis. Eine Terminvereinbarung online oder telefonisch ist nicht erforderlich/möglich – bitte wenden Sie sich bei Nachfragen an die jeweilige Einrichtung):"
-    },
-    {
-        "4": "Weitere Tätigkeitsbereiche und Berufsgruppen werden schrittweise zur Impfung aufgerufen. Mehr Informationen gibt es in der Pressemeldung vom 12. April 2021."
-    },
-    {
-        "group": "Personen im Alter von 70 Jahren und älter,"
-    },
-    {
-        "group": "Personen, auf die ein Kriterium zutrifft, das in Paragraf 2 oder 3 der Impfverordnung des Bundes (PDF) genannt ist,"
-    },
-    {
-        "group": "Beschäftigte bei ambulanten Pflegediensten,"
-    },
-    {
-        "group": "niedergelassene Ärzte und Zahnärzte sowie deren Praxispersonal,"
-    },
-    {
-        "group": "Beschäftigte im Rettungsdienst und im Krankentransportbereich,"
-    },
-    {
-        "group": "Beschäftigte im Öffentlichen Gesundheitsdienst (ÖGD) sowie die Beschäftigten in den vom ÖGD beauftragten Testzentren und Apotheken,"
-    },
-    {
-        "group": "Hebammen, Trage-, Still- und Laktationsberaterinnen und -berater (zum Termin muss ein Tätigkeitsnachweis vorgelegt werden),"
-    },
-    {
-        "group": "Beschäftigte in der Hamburger Kindertagesbetreuung, die in den Einrichtungen Kontakt mit Kindern haben, sowie Tagespflegepersonal (Tagesmütter und Tagesväter),"
-    },
-    {
-        "group": "Logopädinnen und Logopäden, Psychologische Psychotherapeuten und Kinder- und Jugendpsychotherapeuten, (Personal von) Heilmittelerbringer (Ergo-, Physio- und Ernährungstherapeuten sowie Podologen und deren Praxispersonal), Gesundheitshandwerker mit direktem Patientenkontakt in Einrichtungen der stationären Pflege oder in Krankenhäusern,"
-    },
-    {
-        "group": "Polizei- und Ordnungskräfte mit einem wegen ihrer Tätigkeit besonders hohem Infektionsrisiko,"
-    },
-    {
-        "group": "Vollzugspersonal von Justizvollzugsanstalten,"
-    },
-    {
-        "group": "Personal von Grundschulen, Sonderschulen und Förderschulen,"
-    },
-    {
-        "group": "Angehörige von pflegebedürftigen Personen, und zwar bis zu zwei enge Kontaktpersonen von einer nicht in einer Einrichtung befindlichen pflegebedürftigen Person nach § 3 Nummer 1 und 2 und nach § 2 Absatz 1 Nummer 1 der Impfverordnung des Bundes, die von dieser Person oder von einer sie vertretenden Person bestimmt werden (zum Termin muss ein Nachweis vorgelegt werden),"
-    },
-    {
-        "group": "bis zu zwei enge Kontaktpersonen von schwangeren Personen (Nachweis)."
-    },
-    {
-        "group": "Bewohnerinnen und Bewohner sowie Beschäftigte in Pflegeheimen,"
-    },
-    {
-        "group": "Mitarbeiterinnen und Mitarbeiter in Krankenhäusern,"
-    },
-    {
-        "group": "Servicewohneinrichtungen mit Bewohnerinnen und Bewohnern über 80 Jahren,"
-    },
-    {
-        "group": "Beschäftigte und Menschen mit Behinderungen in Wohneinrichtungen der Eingliederungshilfe, Tagesförderstätten und Werkstätten für Menschen mit Behinderungen, in denen pflegebedürftige Personen leben oder betreut werden,"
-    },
-    {
-        "group": "Patientinnen und Patienten, die im Bereich der Onkologie behandelt werden, sowie Dialyse- und COPD-Patienten,"
-    },
-    {
-        "group": "Menschen mit Trisomie 21, geistiger Behinderung, schwerer Epilepsie und Contergangeschädigte können einen Impftermin im Sengelmann Institut für Medizin und Inklusion (SIMI) am Ev. Krankenhaus Alsterdorf vereinbaren."
-    }
-]
+{
+    "dateUpdated": "20.04.2021",
+    "groups": [
+        {
+            "group": "Personen im Alter von 70 Jahren und älter,"
+        },
+        {
+            "group": "Personen, auf die ein Kriterium zutrifft, das in Paragraf 2 oder 3 der Impfverordnung des Bundes (PDF) genannt ist,"
+        },
+        {
+            "group": "Beschäftigte bei ambulanten Pflegediensten,"
+        },
+        {
+            "group": "niedergelassene Ärzte und Zahnärzte sowie deren Praxispersonal,"
+        },
+        {
+            "group": "Beschäftigte im Rettungsdienst und im Krankentransportbereich,"
+        },
+        {
+            "group": "Beschäftigte im Öffentlichen Gesundheitsdienst (ÖGD) sowie die Beschäftigten in den vom ÖGD beauftragten Testzentren und Apotheken,"
+        },
+        {
+            "group": "Hebammen, Trage-, Still- und Laktationsberaterinnen und -berater (zum Termin muss ein Tätigkeitsnachweis vorgelegt werden),"
+        },
+        {
+            "group": "Beschäftigte in der Hamburger Kindertagesbetreuung, die in den Einrichtungen Kontakt mit Kindern haben, sowie Tagespflegepersonal (Tagesmütter und Tagesväter),"
+        },
+        {
+            "group": "Logopädinnen und Logopäden, Psychologische Psychotherapeuten und Kinder- und Jugendpsychotherapeuten, (Personal von) Heilmittelerbringer (Ergo-, Physio- und Ernährungstherapeuten sowie Podologen und deren Praxispersonal), Gesundheitshandwerker mit direktem Patientenkontakt in Einrichtungen der stationären Pflege oder in Krankenhäusern,"
+        },
+        {
+            "group": "Polizei- und Ordnungskräfte mit einem wegen ihrer Tätigkeit besonders hohem Infektionsrisiko,"
+        },
+        {
+            "group": "Vollzugspersonal von Justizvollzugsanstalten,"
+        },
+        {
+            "group": "Personal von Grundschulen, Sonderschulen und Förderschulen,"
+        },
+        {
+            "group": "Angehörige von pflegebedürftigen Personen, und zwar bis zu zwei enge Kontaktpersonen von einer nicht in einer Einrichtung befindlichen pflegebedürftigen Person nach § 3 Nummer 1 und 2 und nach § 2 Absatz 1 Nummer 1 der Impfverordnung des Bundes, die von dieser Person oder von einer sie vertretenden Person bestimmt werden (zum Termin muss ein Nachweis vorgelegt werden),"
+        },
+        {
+            "group": "bis zu zwei enge Kontaktpersonen von schwangeren Personen (Nachweis)."
+        },
+        {
+            "group": "Bewohnerinnen und Bewohner sowie Beschäftigte in Pflegeheimen,"
+        },
+        {
+            "group": "Mitarbeiterinnen und Mitarbeiter in Krankenhäusern,"
+        },
+        {
+            "group": "Servicewohneinrichtungen mit Bewohnerinnen und Bewohnern über 80 Jahren,"
+        },
+        {
+            "group": "Beschäftigte und Menschen mit Behinderungen in Wohneinrichtungen der Eingliederungshilfe, Tagesförderstätten und Werkstätten für Menschen mit Behinderungen, in denen pflegebedürftige Personen leben oder betreut werden,"
+        },
+        {
+            "group": "Patientinnen und Patienten, die im Bereich der Onkologie behandelt werden, sowie Dialyse- und COPD-Patienten,"
+        },
+        {
+            "group": "Menschen mit Trisomie 21, geistiger Behinderung, schwerer Epilepsie und Contergangeschädigte können einen Impftermin im Sengelmann Institut für Medizin und Inklusion (SIMI) am Ev. Krankenhaus Alsterdorf vereinbaren."
+        }
+    ]
+}

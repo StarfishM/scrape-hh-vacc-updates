@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/StarfishM/scrape-hh-vacc-updates#readme",
   "dependencies": {
+    "aws-sdk": "^2.891.0",
     "axios": "^0.21.1",
     "cheerio": "^1.0.0-rc.6",
     "express": "^4.17.1"

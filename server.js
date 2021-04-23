@@ -3,14 +3,14 @@ const axios = require("axios");
 const cheerio = require("cheerio");
 const fs = require("fs");
 const app = express();
-const PORT = 8080;
 const compareState = require("./compareState.json");
 const recentState = require("./recentState.json");
+const { sendEmail } = require("./ses");
 
 app.get("/", async (req, res) => {
     await comparePastAndCurrPageState();
     return res.send(`<h1> well hello there 👋 </h1>
-    <h2>hh vacc page update:${recentState[0].dateUpdated}</h2>
+    <h2>hh vacc page updated last on:${recentState.dateUpdated}</h2>
     `);
 });
 
@@ -20,24 +20,23 @@ const getCurrentPageState = async () => {
             "https://www.hamburg.de/corona-impfung/"
         );
         const $ = cheerio.load(data);
-        const paragraphs = [];
-        // might not need this maß, might only need the date!!!!
+        const infoObj = {};
+        // get updatedDate
         $("div.richtext p").map((i, el) => {
             const paraText = $(el).text();
             if (i === 0) {
                 const matchDate = /(\d\d)\.(\d\d)\.(\d\d\d\d)/;
                 const dateUpdated = matchDate.exec(paraText);
-                paragraphs.push({ dateUpdated: dateUpdated[0] });
+                infoObj.dateUpdated = dateUpdated[0];
             }
-
-            paragraphs.push({ [i]: paraText });
         });
-        // definitely keep those for checking if it's mums turn yet!
+        // get groups curr getting vacc
+        infoObj.groups = [];
         $("ul.normal-list li").map((i, el) => {
-            const lis = $(el).text();
-            paragraphs.push({ group: lis });
+            const li = $(el).text();
+            infoObj.groups.push({ group: li });
         });
-        return paragraphs;
+        return infoObj;
     } catch (err) {
         throw err;
     }
@@ -50,8 +49,8 @@ const writeRecentState = (arr) => {
     );
 };
 
-const pageUpdated = (refArr, currArr) => {
-    if (refArr[0].dateUpdated === currArr[0].dateUpdated) {
+const pageUpdated = (refObj, currObj) => {
+    if (refObj.dateUpdated === currObj.dateUpdated) {
         return false;
     } else {
         return true;
@@ -59,37 +58,34 @@ const pageUpdated = (refArr, currArr) => {
 };
 
 const comparePastAndCurrPageState = async () => {
-    const paragraphs = await getCurrentPageState().catch((err) =>
+    const data = await getCurrentPageState().catch((err) =>
         console.log("err in getCurrentPageState", err)
     );
-    writeRecentState(paragraphs);
+    writeRecentState(data);
     const updated = pageUpdated(compareState, recentState);
-    const yes = checkIfTurn(recentState);
+    const yes = checkIfTurn(recentState.groups);
     console.log("updated?", updated);
     console.log("yes?", yes);
-    if (updated) {
-        // send email! OR text message
-        // make recentState new compareState
-    } else if (yes) {
-        // mum's turn
-    } else {
-        // don't do anything
+    if (updated || yes) {
+        const subject = `HH Vacc page updated`;
+        let message1 = `page updated https://www.hamburg.de/corona-impfung/`;
+        let message2 = `YESSS her turn https://www.hamburg.de/corona-impfung/`;
+        await sendEmail(updated ? message1 : message2, subject);
     }
 };
 
 const checkIfTurn = (arr) => {
     let oui = false;
     arr.map((el) => {
-        // instead get number value from paragrpahk, and check if it is <= 65 , if yes, set to true!
-        if (
-            el.group &&
-            (el.group.indexOf("65") > -1 || el.group.indexOf("60") > -1)
-        ) {
-            console.log("65 is part of the group");
-            oui = true;
+        const checkForAge = /(\d\d\s\bJ)/;
+        const getDoubleDigits = /(\d\d)/;
+        const agePresent = checkForAge.exec(el.group);
+        if (agePresent) {
+            const age = getDoubleDigits.exec(el.group);
+            age[0] <= 65 ? (oui = true) : undefined;
         }
     });
     return oui;
 };
 
-app.listen(PORT, console.log(`server running on ${PORT}`));
+app.listen(process.env.PORT || 8080, console.log(`server running...`));
