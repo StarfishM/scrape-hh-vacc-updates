@@ -4,7 +4,7 @@ const cheerio = require("cheerio");
 const fs = require("fs");
 const app = express();
 const compareState = require("./compareState.json");
-let recentState = require("./recentState.json");
+let recentState;
 const { sendEmail } = require("./ses");
 
 app.get("/", async (req, res) => {
