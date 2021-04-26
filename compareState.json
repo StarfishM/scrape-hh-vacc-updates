@@ -1,11 +1,17 @@
 {
-    "dateUpdated": "20.04.2021",
+    "dateUpdated": "26.04.2021",
     "groups": [
         {
             "group": "Personen im Alter von 70 Jahren und älter,"
         },
         {
             "group": "Personen, auf die ein Kriterium zutrifft, das in Paragraf 2 oder 3 der Impfverordnung des Bundes (PDF) genannt ist,"
+        },
+        {
+            "group": "Neu: Personen, die in Einrichtungen und Diensten der Kinder- und Jugendhilfe sowie in weiterführenden und beruflichen Schulen tätig sind. Dazu gehören sowohl staatliche als auch private Stadtteilschulen, Gymnasien und Berufsschulen (Arbeitgeberbescheinigung, PDF),"
+        },
+        {
+            "group": "Personal von Grundschulen, Sonderschulen und Förderschulen (Arbeitgeberbescheinigung, PDF),"
         },
         {
             "group": "Beschäftigte bei ambulanten Pflegediensten,"
@@ -32,10 +38,7 @@
             "group": "Polizei- und Ordnungskräfte mit einem wegen ihrer Tätigkeit besonders hohem Infektionsrisiko,"
         },
         {
-            "group": "Vollzugspersonal von Justizvollzugsanstalten,"
-        },
-        {
-            "group": "Personal von Grundschulen, Sonderschulen und Förderschulen,"
+            "group": "Vollzugspersonal von Justizvollzugsanstalten,,"
         },
         {
             "group": "Angehörige von pflegebedürftigen Personen, und zwar bis zu zwei enge Kontaktpersonen von einer nicht in einer Einrichtung befindlichen pflegebedürftigen Person nach § 3 Nummer 1 und 2 und nach § 2 Absatz 1 Nummer 1 der Impfverordnung des Bundes, die von dieser Person oder von einer sie vertretenden Person bestimmt werden (zum Termin muss ein Nachweis vorgelegt werden),"
