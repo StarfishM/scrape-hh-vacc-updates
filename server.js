@@ -42,13 +42,13 @@ const getCurrentPageState = async () => {
     }
 };
 
-const writeRecentState = (arr) => {
-    fs.writeFileSync(
-        `${__dirname}/recentState.json`,
-        JSON.stringify(arr, null, 4)
-    );
-    recentState = require("./recentState.json");
-};
+// const writeRecentState = (arr) => {
+//     fs.writeFileSync(
+//         `${__dirname}/recentState.json`,
+//         JSON.stringify(arr, null, 4)
+//     );
+//     recentState = require("./recentState.json");
+// };
 
 const pageUpdated = (refObj, currObj) => {
     if (refObj.dateUpdated === currObj.dateUpdated) {
@@ -62,7 +62,9 @@ const comparePastAndCurrPageState = async () => {
     const data = await getCurrentPageState().catch((err) =>
         console.log("err in getCurrentPageState", err)
     );
-    writeRecentState(data);
+    // writeRecentState(data);
+    console.log("data:", data);
+    recentState = data;
     const updated = pageUpdated(compareState, recentState);
     const yes = checkIfTurn(recentState.groups);
     console.log("updated?", updated);
