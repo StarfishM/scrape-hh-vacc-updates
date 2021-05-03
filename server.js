@@ -55,6 +55,7 @@ const comparePastAndCurrPageState = async () => {
         console.log("err in getCurrentPageState", err)
     );
     recentState = data;
+    // console.log(JSON.stringify(recentState));
     const updated = pageUpdated(compareState, recentState);
     const yes = checkIfTurn(recentState.groups);
     console.log("updated?", updated);
