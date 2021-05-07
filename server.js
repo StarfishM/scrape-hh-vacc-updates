@@ -1,11 +1,11 @@
 const express = require("express");
 const axios = require("axios");
 const cheerio = require("cheerio");
-const fs = require("fs");
 const app = express();
 const compareState = require("./compareState.json");
 let recentState;
 const { sendEmail } = require("./ses");
+const fs = require("fs");
 
 app.get("/", async (req, res) => {
     await comparePastAndCurrPageState();
@@ -46,8 +46,16 @@ const pageUpdated = (refObj, currObj) => {
     if (refObj.dateUpdated === currObj.dateUpdated) {
         return false;
     } else {
+        updateCompareStateJson(recentState);
         return true;
     }
+};
+
+const updateCompareStateJson = (arr) => {
+    fs.writeFileSync(
+        `${__dirname}/compareState.json`,
+        JSON.stringify(arr, null, 4)
+    );
 };
 
 const comparePastAndCurrPageState = async () => {
@@ -55,7 +63,6 @@ const comparePastAndCurrPageState = async () => {
         console.log("err in getCurrentPageState", err)
     );
     recentState = data;
-    // console.log(JSON.stringify(recentState));
     const updated = pageUpdated(compareState, recentState);
     const yes = checkIfTurn(recentState.groups);
     console.log("updated?", updated);
