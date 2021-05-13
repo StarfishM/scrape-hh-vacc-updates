@@ -1,17 +1,20 @@
 {
-    "dateUpdated": "07.05.2021",
+    "dateUpdated": "13.05.2021",
     "groups": [
         {
             "group": "Personen im Alter von 70 Jahren und älter,"
         },
         {
-            "group": "Personen, auf die ein Kriterium zutrifft, das in Paragraf 2 oder 3 der Impfverordnung des Bundes genannt ist,"
+            "group": "Personen, auf die ein Kriterium zutrifft, das in Paragraf 2 oder 3 der Impfverordnung des Bundes genannt ist, "
         },
         {
-            "group": "Neu: Beschäftigte, die die Funktionsfähigkeit des öffentlichen Personennahverkehrs sicherstellen, sowie Fahrerinnen und Fahrer von Taxen und MOIAs, (Arbeitgeberbescheinigung, PDF)"
+            "group": "Neu: Personen mit besonderen Vorerkrankungen nach Paragraf 4 Ziffer 2 der Impfverordnung des Bundes, Terminvereinbarung für diese Gruppe ist ab 17. Mai 2021 möglich."
         },
         {
-            "group": "Neu: in besonders relevanter Position Beschäftigte von Apotheken (jeweils berechtigt gemäß §4, Zif. 5 ImpfVO) Arbeitgeberbescheinigung (PDF) sowie in medizinischen Laboren (Arbeitgeberbescheinigung, PDF)"
+            "group": "Beschäftigte, die die Funktionsfähigkeit des öffentlichen Personennahverkehrs sicherstellen, sowie Fahrerinnen und Fahrer von Taxen und MOIAs, (Arbeitgeberbescheinigung, PDF)"
+        },
+        {
+            "group": "In besonders relevanter Position Beschäftigte von Apotheken (jeweils berechtigt gemäß §4, Zif. 5 ImpfVO) Arbeitgeberbescheinigung (PDF) sowie Personen, die in medizinischen Einrichtungen mit niedrigem Expositionsrisiko in Bezug auf das Coronavirus SARS-CoV-2 tätig sind, insbesondere in Laboren, und Personal, das keine Patientinnen oder Patienten betreut (Arbeitgeberbescheinigung, PDF)"
         },
         {
             "group": "Personen, die im Lebensmitteleinzelhandel tätig sind - dazu gehören insbesondere Supermärkte, Verbrauchermärkte, Discounter, Drogeriemärkte (Arbeitgeberbescheinigung, PDF), "
