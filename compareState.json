@@ -1,5 +1,5 @@
 {
-    "dateUpdated": "13.05.2021",
+    "dateUpdated": "20.05.2021",
     "groups": [
         {
             "group": "Personen im Alter von 70 Jahren und älter,"
@@ -8,7 +8,7 @@
             "group": "Personen, auf die ein Kriterium zutrifft, das in Paragraf 2 oder 3 der Impfverordnung des Bundes genannt ist, "
         },
         {
-            "group": "Neu: Personen mit besonderen Vorerkrankungen nach Paragraf 4 Ziffer 2 der Impfverordnung des Bundes, Terminvereinbarung für diese Gruppe ist ab 17. Mai 2021 möglich."
+            "group": "Neu: Personen mit besonderen Vorerkrankungen nach Paragraf 4 Ziffer 2 der Impfverordnung des Bundes, (Bitte beachten Sie die Hinweise zum Attest.)"
         },
         {
             "group": "Beschäftigte, die die Funktionsfähigkeit des öffentlichen Personennahverkehrs sicherstellen, sowie Fahrerinnen und Fahrer von Taxen und MOIAs, (Arbeitgeberbescheinigung, PDF)"
@@ -26,7 +26,7 @@
             "group": "Personen, die in Einrichtungen und Diensten der Kinder- und Jugendhilfe sowie in weiterführenden und beruflichen Schulen tätig sind. Dazu gehören sowohl staatliche als auch private Stadtteilschulen, Gymnasien und Berufsschulen (Arbeitgeberbescheinigung, PDF),"
         },
         {
-            "group": "Neu: Hauptamtliche Mitarbeiterinnen und Mitarbeiter in den Hamburger Jugendverbänden. Ehrenamtlich Tätige ohne Jugendleitercard, die aufgrund besonderer Aufgaben und Fähigkeiten bei den Freizeiten und Aktivitäten der Jugendverbände, insbesondere in den kommenden Sommerferien, benötigt werden. Inhaber eines Freiwilligendienstausweises, einer Referentenbescheinigung, der DOSB C-Lizenz „Breitensport für Kinder und Jugendliche“ oder der Fachtrainerlizenz im Kinder und Jugendsport, und benannte Aktive in der Jugendhilfe im Hamburger Kinder- und Jugendsport. (Bescheinigung, PDF). Jugendgruppenleiterinnen und Jugendgruppenleiter weisen ihre Berechtigung durch die staatlich anerkannte Jugendgruppenleiter-Card (JuLeiCa) eines Hamburger Trägers nach."
+            "group": "Hauptamtliche Mitarbeiterinnen und Mitarbeiter in den Hamburger Jugendverbänden. Ehrenamtlich Tätige ohne Jugendleitercard, die aufgrund besonderer Aufgaben und Fähigkeiten bei den Freizeiten und Aktivitäten der Jugendverbände, insbesondere in den kommenden Sommerferien, benötigt werden. Inhaber eines Freiwilligendienstausweises, einer Referentenbescheinigung, der DOSB C-Lizenz „Breitensport für Kinder und Jugendliche“ oder der Fachtrainerlizenz im Kinder und Jugendsport, und benannte Aktive in der Jugendhilfe im Hamburger Kinder- und Jugendsport. (Bescheinigung, PDF). Jugendgruppenleiterinnen und Jugendgruppenleiter weisen ihre Berechtigung durch die staatlich anerkannte Jugendgruppenleiter-Card (JuLeiCa) eines Hamburger Trägers nach."
         },
         {
             "group": "Personal von Grundschulen, Sonderschulen und Förderschulen (Arbeitgeberbescheinigung, PDF),"
@@ -62,7 +62,7 @@
             "group": "Angehörige von pflegebedürftigen Personen, und zwar bis zu zwei enge Kontaktpersonen von einer nicht in einer Einrichtung befindlichen pflegebedürftigen Person nach § 3 Nummer 1 und 2 und nach § 2 Absatz 1 Nummer 1 der Impfverordnung des Bundes, die von dieser Person oder von einer sie vertretenden Person bestimmt werden (zum Termin muss ein Nachweis vorgelegt werden),"
         },
         {
-            "group": "bis zu zwei enge Kontaktpersonen von schwangeren Personen (Nachweis)."
+            "group": "bis zu zwei enge Kontaktpersonen von schwangeren Personen (benötigt wird zur Impfung neben dem Nachweis über Kontaktpersonen und ein ärztliches Attest als Nachweis über die Schwangerschaft selbst)"
         },
         {
             "group": "Bewohnerinnen und Bewohner sowie Beschäftigte in Pflegeheimen,"
